@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pragati Landscapes</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <h1 class="brand-title">Pragati Landscapes</h1>
+    <nav>
+        <a href="#order">Order</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="images/pavour1.jpg" alt="Landscape Image">
+    <div class="hero-text">
+        <h1>Order Booking</h1>
+        <p>Place your order with us!</p>
+    </div>
+</section>
+
+<section id="order" class="order-section">
+    <h2 class="order-heading">Place Your Order</h2>
+
+    <!-- ✅ NETLIFY FORM -->
+    <form
+        name="order"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        action="/thankyou.html">
+
+        <input type="hidden" name="form-name" value="order">
+
+        <p hidden>
+            <label>Don’t fill this out: <input name="bot-field"></label>
+        </p>
+
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="tel" name="phone" placeholder="Phone" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="address" placeholder="Address" required>
+        <input type="number" name="quantity" placeholder="Quantity" required>
+
+        <button type="submit">Submit Order</button>
+    </form>
+</section>
+
+<section id="products" class="products-section">
+    <h2>Our Products</h2>
+    <div class="products">
+        <img src="images/pavour1.jpg">
+        <img src="images/pavour2.jpg">
+        <img src="images/pavour3.jpg">
+        <img src="images/pavour4.jpg">
+        <img src="images/pavour5.jpg">
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 <a href="tel:+919219546245">+91 9219546245</a></p>
+    <p>📧 <a href="mailto:specs.pragati@gmail.com">specs.pragati@gmail.com</a></p>
+</section>
+
+<footer>
+    <p>© 2026 Pragati Landscapes</p>
+</footer>
+
+</body>
+</html>
